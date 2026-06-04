@@ -1,0 +1,19 @@
+name: data.sa.gov.au South Australia
+description: data.sa.gov.au South Australia CKAN open-data API live-verification for APIs.json cataloging.
+url: https://raw.githubusercontent.com/api-evangelist/data-sa-gov-au/refs/heads/main/review.yml
+created: '2026-06-04'
+modified: '2026-06-04'
+reviews:
+  - date: '2026-06-04'
+    rating: 4
+    summary: >-
+      data.sa.gov.au South Australia runs CKAN and exposes a live, standardized open-data catalog API. The
+      endpoint was probed and returned a valid CKAN JSON response reporting approximately 1,916 datasets (CKAN version 2.9.12).
+      Because it runs CKAN, the full standard action/search API surface is available and consistent with all other CKAN portals.
+    endpoints:
+      - url: https://data.sa.gov.au/data/api/3/action/status_show
+        status: 200
+        note: Live CKAN API response verified during inventory probe.
+      - url: https://data.sa.gov.au/data
+        status: 200
+        note: Portal home.
